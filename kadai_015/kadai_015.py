@@ -3,11 +3,15 @@ class Human:
     def __init__(self, name, age):
         self.name = name
         self.age = age
+    
+    # printinfoメソッドを定義   
+    def printinfo(self):
+      print("名前:",self.name)
+      print("年齢:",self.age)  
 
 
 # インスタンス化する
 human = Human("侍太郎", 36)
 
-# 属性にアクセスし、値を出力する
-print(human.name)
-print(human.age)
+# printinfoメソッドにアクセスして値を出力する
+human.printinfo()
